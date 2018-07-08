@@ -1,0 +1,24 @@
+{
+  "name": "sdhacks-2018",
+  "version": "1.0.0",
+  "description": "Official Website of SD Hacks 2018, UC San Diego's Annual Collegiate Hackathon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SDHacks/SDHacks2018.git"
+  },
+  "author": "UCSD Triton Engineering Student Council",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SDHacks/SDHacks2018/issues"
+  },
+  "scripts": {
+    "start": "node_modules/.bin/gulp"
+  },
+  "homepage": "https://github.com/SDHacks/SDHacks2018#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

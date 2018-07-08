@@ -1,0 +1,17 @@
+.flo {
+  margin: 5rem 0;
+  text-align: center;
+
+  @include media-breakpoint-up(md) {
+    margin: 8rem 0;
+  }
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__contents {
+    font-size: 1.1rem;
+    color: $header-color;
+  }
+}

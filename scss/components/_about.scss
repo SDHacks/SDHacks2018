@@ -1,0 +1,13 @@
+.about {
+  margin: 5rem 0;
+  text-align: center;
+
+  &__header {
+    margin-bottom: 2rem;
+  }
+
+  &__contents {
+    font-size: 1.1rem;
+    color: $header-color;
+  }
+}

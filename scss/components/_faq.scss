@@ -1,0 +1,15 @@
+.faq {
+  text-align: center;
+  margin: 0 0 5rem;
+
+  &--student {
+    a {
+      color: $decaf-dark-green;
+
+      &:hover {
+        color: $decaf-light-green;
+        text-decoration: none;
+      }
+    }
+  }
+}

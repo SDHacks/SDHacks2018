@@ -1,0 +1,26 @@
+.company-table {
+  font-size: 0.9rem;
+  padding: 2rem;
+
+  th {
+    width: 25%;
+    border: none;
+    vertical-align: middle;
+    font-weight: normal;
+  }
+
+  tr:nth-child(2) td {
+    border: none;
+  }
+
+  td {
+    border-color: $company-table-header-color;
+    border-width: 2px;
+    vertical-align: middle;
+  }
+
+  &__header {
+    background-color: $company-table-header-color;
+    color: $company-table-header-text;
+  }
+}

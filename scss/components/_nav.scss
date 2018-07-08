@@ -1,0 +1,21 @@
+.nav {
+  min-height: 80px;
+  background: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: $default-shadow;
+
+  &__logo {
+    height: 64px;
+  }
+
+  &__items {
+    width: 94%;
+    margin: 0 auto;
+  }
+
+  &__item {
+    margin: 0 0.7rem;
+  }
+}
