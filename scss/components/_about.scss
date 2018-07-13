@@ -1,13 +1,34 @@
 .about {
-  margin: 5rem 0;
-  text-align: center;
 
-  &__header {
-    margin-bottom: 2rem;
+	background: $aqua-blue;
+	transform: translateY(-1px);
+	color: white;
+	font-size: 1.3rem;
+
+  &__wave {
+  	width: 81%;
+  	transform: translateY(-1px);
   }
 
-  &__contents {
-    font-size: 1.1rem;
-    color: $header-color;
+  &__title {
+  	font-size: 3rem;
+  	font-family: 'Reem Kufi', Helvetica, Roboto, Arial, sans-serif;
+  }
+
+  &__graphic {
+  	width: 125%;
+  	transform: translateY(-25%);
+  }
+
+  &__collab {
+  	color: #B73737;
+  }
+
+  &__empower {
+  	color: #F9AE70;
+  }
+
+  &__innovate {
+  	color: #006699;
   }
 }

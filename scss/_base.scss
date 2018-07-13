@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin:400,600|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600|Work+Sans|Reem+Kufi:300,400,600');
 @import 'bootstrap-overrides';
 @import '../node_modules/bootstrap/scss/bootstrap';
 
@@ -18,8 +18,12 @@ $decaf-light-yellow: #F6B745;
 $decaf-dark-red: #f24141;
 $decaf-light-red: #e76d52;
 
+$sandy: #9FD2E1;
+$sky-blue: #F4E6CA;
+$aqua-blue: #4592AD;
+
+$hero-bg: linear-gradient(-45deg, $sandy 40%, $sky-blue);
 $decaf-gradient: linear-gradient(to right top, $decaf-dark-blue, $decaf-light-blue);
-$decaf-student-gradient: linear-gradient(to right top, $decaf-dark-green, $decaf-light-green);
 $decaf-yellow-gradient: linear-gradient(to right top, $decaf-dark-yellow, $decaf-light-yellow);
 $decaf-red-gradient: linear-gradient(to right top, $decaf-dark-red, $decaf-light-red);
 
