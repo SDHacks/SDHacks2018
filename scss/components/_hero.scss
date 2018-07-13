@@ -15,18 +15,18 @@
   	left: 5%;
   	font-size: 2rem;
 
-	@include media-breakpoint-down(md) {
-		top: 5%;
-	}
+  	@include media-breakpoint-down(md) {
+  		top: 5%;
+  	}
 
-	@include media-breakpoint-down(sm) {
-		font-size: 1.3rem;
-		text-align: center;
-		left: 0; 
-		right: 0; 
-		margin-left: auto; 
-		margin-right: auto; 
-	}
+  	@include media-breakpoint-down(sm) {
+  		font-size: 1.3rem;
+  		text-align: center;
+  		left: 0; 
+  		right: 0; 
+  		margin-left: auto; 
+  		margin-right: auto; 
+  	}
 
   	&-logo {
   		width: 100%;
@@ -38,5 +38,13 @@
   			margin: 0 auto;
   		}
   	}
+
+    &-text {
+      margin-top: 3rem;
+
+      @include media-breakpoint-down(sm) {
+        margin-top: 1rem;
+      }
+    }
   }
 }

@@ -5560,6 +5560,11 @@ h1 {
           width: 30%;
           display: block;
           margin: 0 auto; } }
+    .hero__content-text {
+      margin-top: 3rem; }
+      @media (max-width: 767px) {
+        .hero__content-text {
+          margin-top: 1rem; } }
 
 .nav {
   min-height: 80px;
@@ -5589,14 +5594,24 @@ h1 {
     font-size: 3rem;
     font-family: 'Reem Kufi', Helvetica, Roboto, Arial, sans-serif; }
   .about__graphic {
-    width: 125%;
-    transform: translateY(-25%); }
+    width: 100%;
+    display: block; }
+    @media (max-width: 767px) {
+      .about__graphic {
+        width: 50%;
+        min-width: 20rem;
+        margin: 0 auto; } }
   .about__collab {
     color: #B73737; }
   .about__empower {
     color: #F9AE70; }
   .about__innovate {
     color: #006699; }
+  .about__container {
+    max-width: 974px; }
+    @media (max-width: 767px) {
+      .about__container {
+        text-align: center; } }
 
 .white-button {
   width: 10rem;

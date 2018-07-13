@@ -16,8 +16,15 @@
   }
 
   &__graphic {
-  	width: 125%;
-  	transform: translateY(-25%);
+  	width: 100%;
+  	//tranform: translateY(-20%);
+  	display: block;
+
+  	@include media-breakpoint-down(sm) {
+  		width: 50%;
+  		min-width: 20rem;
+  		margin: 0 auto;
+  	}
   }
 
   &__collab {
@@ -30,5 +37,12 @@
 
   &__innovate {
   	color: #006699;
+  }
+
+  &__container {
+  	max-width: 974px;
+   	@include media-breakpoint-down(sm) {
+   		text-align: center;
+  	} 	
   }
 }
