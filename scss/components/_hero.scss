@@ -8,16 +8,35 @@
   &__graphic {
   	width: 100%;
   }
-
   &__content {
   	color: $tesc-blue;
   	position: absolute;
-  	top: 20%;
+  	top: 18%;
   	left: 5%;
   	font-size: 2rem;
 
+	@include media-breakpoint-down(md) {
+		top: 5%;
+	}
+
+	@include media-breakpoint-down(sm) {
+		font-size: 1.3rem;
+		text-align: center;
+		left: 0; 
+		right: 0; 
+		margin-left: auto; 
+		margin-right: auto; 
+	}
+
   	&-logo {
   		width: 100%;
+
+  		@include media-breakpoint-down(sm) {
+  			min-width: 10rem;
+  			width: 30%;
+  			display: block;
+  			margin: 0 auto;
+  		}
   	}
   }
 }

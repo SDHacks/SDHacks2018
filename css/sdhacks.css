@@ -5538,11 +5538,28 @@ h1 {
   .hero__content {
     color: #004E74;
     position: absolute;
-    top: 20%;
+    top: 18%;
     left: 5%;
     font-size: 2rem; }
+    @media (max-width: 1023px) {
+      .hero__content {
+        top: 5%; } }
+    @media (max-width: 767px) {
+      .hero__content {
+        font-size: 1.3rem;
+        text-align: center;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto; } }
     .hero__content-logo {
       width: 100%; }
+      @media (max-width: 767px) {
+        .hero__content-logo {
+          min-width: 10rem;
+          width: 30%;
+          display: block;
+          margin: 0 auto; } }
 
 .nav {
   min-height: 80px;
@@ -5582,15 +5599,20 @@ h1 {
     color: #006699; }
 
 .white-button {
-  min-width: 10rem;
+  width: 10rem;
   padding: 0.5rem 1rem;
   margin: 1.5rem 0;
   background: #fff;
   border: 2px solid #fff;
   border-radius: 0.3rem;
-  color: #1fd46d;
+  color: #004E74;
   display: inline-block;
   transition: background 100ms linear, color 100ms linear; }
+  @media (max-width: 767px) {
+    .white-button {
+      display: inline-block;
+      margin: 0 auto;
+      width: 7rem; } }
   .white-button:hover {
     cursor: pointer;
     background: transparent;
@@ -5601,5 +5623,3 @@ h1 {
     display: inline;
     margin: 0;
     min-width: 0; }
-  .white-button--sponsor {
-    color: #237EF1; }

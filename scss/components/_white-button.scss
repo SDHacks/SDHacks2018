@@ -1,14 +1,20 @@
 .white-button {
-  min-width: 10rem;
+  width: 10rem;
   padding: 0.5rem 1rem;
   margin: 1.5rem 0;
   background: $white;
   border: 2px solid $white;
   border-radius: $border-radius;
-  color: $decaf-dark-green;
+  color: $tesc-blue;
   display: inline-block;
   transition: background 100ms linear, color 100ms linear;
   
+  @include media-breakpoint-down(sm) {
+    display: inline-block;
+    margin: 0 auto;
+    width: 7rem;
+  }
+
   &:hover {
     cursor: pointer;
     background: transparent;
@@ -23,7 +29,4 @@
     min-width: 0;
   }
 
-  &--sponsor {
-    color: $decaf-dark-blue;
-  }
 }
