@@ -5650,14 +5650,21 @@ h1 {
     margin: 0 auto; }
     @media (max-width: 767px) {
       .schedule__top {
-        width: 80%;
-        min-width: 20rem;
-        margin: 0 auto;
         display: none; } }
   .schedule__bot {
     width: 100%; }
   .schedule__main {
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    position: relative; }
+    .schedule__main-graphic {
+      width: 15rem;
+      position: absolute;
+      left: 60%;
+      bottom: 50%;
+      opacity: 0.6; }
+      @media (max-width: 767px) {
+        .schedule__main-graphic {
+          left: 20%; } }
   .schedule__title-b {
     font-size: 2.7rem; }
   .schedule__list {
