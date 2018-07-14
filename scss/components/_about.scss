@@ -17,7 +17,7 @@
 
   &__graphic {
   	width: 100%;
-  	//tranform: translateY(-20%);
+    margin-left: 5rem;
   	display: block;
 
   	@include media-breakpoint-down(sm) {
@@ -40,7 +40,7 @@
   }
 
   &__container {
-  	max-width: 974px;
+  	max-width: 1024px;
    	@include media-breakpoint-down(sm) {
    		text-align: center;
   	} 	

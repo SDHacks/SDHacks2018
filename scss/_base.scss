@@ -21,8 +21,10 @@ $decaf-light-red: #e76d52;
 $sandy: #9FD2E1;
 $sky-blue: #F4E6CA;
 $aqua-blue: #4592AD;
+$deep-blue: #1F6077;
 
 $hero-bg: linear-gradient(-45deg, $sandy 40%, $sky-blue);
+$schedule-bg: linear-gradient($aqua-blue, $deep-blue);
 $decaf-gradient: linear-gradient(to right top, $decaf-dark-blue, $decaf-light-blue);
 $decaf-yellow-gradient: linear-gradient(to right top, $decaf-dark-yellow, $decaf-light-yellow);
 $decaf-red-gradient: linear-gradient(to right top, $decaf-dark-red, $decaf-light-red);

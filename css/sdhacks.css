@@ -5595,6 +5595,7 @@ h1 {
     font-family: 'Reem Kufi', Helvetica, Roboto, Arial, sans-serif; }
   .about__graphic {
     width: 100%;
+    margin-left: 5rem;
     display: block; }
     @media (max-width: 767px) {
       .about__graphic {
@@ -5608,7 +5609,7 @@ h1 {
   .about__innovate {
     color: #006699; }
   .about__container {
-    max-width: 974px; }
+    max-width: 1024px; }
     @media (max-width: 767px) {
       .about__container {
         text-align: center; } }
@@ -5638,3 +5639,36 @@ h1 {
     display: inline;
     margin: 0;
     min-width: 0; }
+
+.schedule {
+  background: linear-gradient(#4592AD, #1F6077);
+  transform: translateY(-2px);
+  min-height: 80vh;
+  color: white; }
+  .schedule__top {
+    width: 50%;
+    margin: 0 auto; }
+    @media (max-width: 767px) {
+      .schedule__top {
+        width: 80%;
+        min-width: 20rem;
+        margin: 0 auto;
+        display: none; } }
+  .schedule__bot {
+    width: 100%; }
+  .schedule__main {
+    margin-top: 5rem; }
+  .schedule__title-b {
+    font-size: 2.7rem; }
+  .schedule__list {
+    list-style-type: none;
+    font-size: 1.2rem;
+    display: block; }
+    .schedule__list-item {
+      width: 100%;
+      margin: 1rem auto; }
+      .schedule__list-item_time {
+        width: 45%;
+        margin-right: 10%; }
+      .schedule__list-item_text {
+        width: 45%; }

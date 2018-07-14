@@ -1,0 +1,53 @@
+.schedule {
+	background: $schedule-bg;
+	transform: translateY(-2px);
+	min-height: 80vh;
+	color: white;
+
+	&__top {
+		width: 50%;
+		margin: 0 auto;
+
+		@include media-breakpoint-down(sm) {
+	  		width: 80%;
+	  		min-width: 20rem;
+	  		margin: 0 auto;
+	  		display: none;
+	  	}
+
+	}
+
+	&__bot {
+		width: 100%;
+	}
+
+	&__main {
+		margin-top: 5rem;
+	}
+
+	&__title {
+		&-b {
+			font-size: 2.7rem;
+		}
+	}
+
+	&__list {
+		list-style-type: none;
+		font-size: 1.2rem;
+		display: block;
+
+		&-item {
+			width: 100%;
+			margin: 1rem auto;
+
+			&_time {
+				width: 45%;
+				margin-right: 10%;
+			}
+
+			&_text {
+				width: 45%;
+			}
+		}
+	}
+}
