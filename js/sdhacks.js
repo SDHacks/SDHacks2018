@@ -7,7 +7,6 @@ $(document).ready(function(){
 
     $(function () {
         $(window).scroll(function () {
-            console.log($(this).scrollTop());
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
                 _nav.fadeIn(FADE_DURATION);
             } else {

@@ -3,6 +3,7 @@
   background: $contact-gradient;
   height: 18rem;
   position: relative;
+  transform: translateY(-2px);
 
   &:before {
     display: block;

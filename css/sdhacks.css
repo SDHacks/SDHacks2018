@@ -5471,9 +5471,10 @@ ul {
 
 .contact {
   text-align: center;
-  background: linear-gradient(to right bottom, #C6AAE1 33%, #AA8DC5);
+  background: linear-gradient(to right bottom, #4592AD 33%, #1F6077);
   height: 18rem;
-  position: relative; }
+  position: relative;
+  transform: translateY(-2px); }
   .contact:before {
     display: block;
     content: '';
@@ -5487,7 +5488,7 @@ ul {
     background-size: cover;
     background-repeat: no-repeat; }
   .contact--sponsor {
-    background: linear-gradient(to right bottom, #C6AAE1 33%, #AA8DC5); }
+    background: linear-gradient(to right bottom, #4592AD 33%, #1F6077); }
   .contact__link {
     color: #fff;
     text-decoration-style: wavy;
@@ -5592,7 +5593,7 @@ ul {
   color: white;
   font-size: 1.3rem; }
   .about__wave {
-    width: 81%;
+    width: 81.5%;
     transform: translateY(-1px); }
   .about__title {
     font-size: 3rem;
@@ -5673,7 +5674,9 @@ ul {
     font-size: 2.7rem; }
   .schedule__list {
     font-size: 1.2rem;
-    display: block; }
+    display: block;
+    padding-left: 3rem;
+    padding-top: 1rem; }
     .schedule__list-item {
       width: 100%;
       margin: 1rem auto; }

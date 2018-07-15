@@ -26,9 +26,7 @@ $sand-yellow: #EFDC8E;
 
 $hero-bg: linear-gradient(-45deg, $sun-yellow 40%, $sky-blue);
 $schedule-bg: linear-gradient($aqua-blue, $deep-blue);
-$decaf-gradient: linear-gradient(to right top, $decaf-dark-blue, $decaf-light-blue);
-$decaf-yellow-gradient: linear-gradient(to right top, $decaf-dark-yellow, $decaf-light-yellow);
-$decaf-red-gradient: linear-gradient(to right top, $decaf-dark-red, $decaf-light-red);
+$contact-gradient: linear-gradient(to right bottom, $aqua-blue 33%, $deep-blue);
 
 $link-active: $white;
 $link-inactive: transparentize($link-active, 0.2);
@@ -56,4 +54,3 @@ $default-shadow-color: rgba(12, 42, 51, 0.3);
 $default-shadow: 0 2px 16px $default-shadow-color;
 $extended-shadow: 0 2px 22px $default-shadow-color;
 
-$contact-gradient: linear-gradient(to right bottom, $light-purple 33%, $default-purple);
