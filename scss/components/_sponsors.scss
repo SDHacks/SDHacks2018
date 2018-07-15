@@ -1,0 +1,41 @@
+.sponsors {
+	background: $sand-yellow;
+	transform: translateY(-2px);
+	color: $tesc-blue;
+
+	&__title {
+		display:block;
+		margin: 5rem auto;
+
+		&-b {
+			font-size: 2.5rem;
+		}
+
+		&-s {
+			font-size: 1.2rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			margin-top: 0;
+		}
+	}
+
+	&__rock {
+		@include media-breakpoint-down(sm) {
+			width: 50%;
+			min-width: 20rem;
+		}
+	}
+
+	&__seagull {
+		position: absolute;
+		right: 0;
+		@include media-breakpoint-down(sm) {
+			display: none;
+		}
+	}
+
+	&__bot {
+		margin-bottom: 5rem;
+	}	
+}
