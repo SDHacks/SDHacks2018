@@ -14,4 +14,7 @@ $(document).ready(function(){
             }
         });
     });
+
+    let tl = new TimelineMax();
+    tl.staggerFrom('#laptop_text_copy_2 > g > g path', 0.1, {scaleX: 0}, 0.1);
 });
