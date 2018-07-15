@@ -8,6 +8,7 @@
   &__graphic {
   	width: 100%;
     transform: translateY(6px);
+    z-index: 1;
   }
   &__content {
   	color: $tesc-blue;
@@ -15,6 +16,7 @@
   	top: 18%;
   	left: 5%;
   	font-size: 2rem;
+    z-index: 5;
 
   	@include media-breakpoint-down(md) {
   		top: 5%;
