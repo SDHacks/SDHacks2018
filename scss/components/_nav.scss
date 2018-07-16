@@ -13,9 +13,15 @@
     background-color: white;
   }
 
+  &__toggler {
+    position: absolute;
+    right: 0;
+  }
+
   &__white &__logo {
-      display: block;
       height: 64px;
+      display: block;
+      display: initial;
     }
 
   &__logo {
@@ -23,8 +29,8 @@
   }
 
   &__items {
-    width: 94%;
-    margin: 0 auto;
+    width: 80%;
+    margin-left: 8%;
   }
 
   &__item {

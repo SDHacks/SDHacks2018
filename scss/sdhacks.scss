@@ -32,4 +32,19 @@ ul {
 	padding-left: 0px;
 }
 
+#mlh-trust-badge {
+  display:block;
+  max-width:80px;
+  min-width:60px;
+  position:fixed;
+  right:50px;
+  top:0;
+  width:10%;
+  z-index:10000;
+
+  @include media-breakpoint-down(md) {
+    left: 1rem;
+  }
+}
+
 @import 'components/all';

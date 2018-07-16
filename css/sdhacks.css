@@ -5469,6 +5469,19 @@ ul {
   list-style-type: none;
   padding-left: 0px; }
 
+#mlh-trust-badge {
+  display: block;
+  max-width: 80px;
+  min-width: 60px;
+  position: fixed;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 10000; }
+  @media (max-width: 1023px) {
+    #mlh-trust-badge {
+      left: 1rem; } }
+
 .contact {
   text-align: center;
   background: linear-gradient(to right bottom, #4592AD 33%, #1F6077);
@@ -5585,14 +5598,18 @@ ul {
   .nav__white {
     box-shadow: 0 2px 16px rgba(12, 42, 51, 0.3);
     background-color: white; }
+  .nav__toggler {
+    position: absolute;
+    right: 0; }
   .nav__white .nav__logo {
+    height: 64px;
     display: block;
-    height: 64px; }
+    display: initial; }
   .nav__logo {
     display: none; }
   .nav__items {
-    width: 94%;
-    margin: 0 auto; }
+    width: 80%;
+    margin-left: 8%; }
   .nav__item {
     margin: 0 0.5rem; }
 
