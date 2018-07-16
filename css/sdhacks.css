@@ -5575,19 +5575,26 @@ ul {
 
 .nav {
   min-height: 80px;
-  background: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 8;
-  box-shadow: 0 2px 16px rgba(12, 42, 51, 0.3); }
-  .nav__logo {
+  background-color: transparent;
+  color: #004E74;
+  transition: background-color 0.2s linear; }
+  .nav__white {
+    box-shadow: 0 2px 16px rgba(12, 42, 51, 0.3);
+    background-color: white; }
+  .nav__white .nav__logo {
+    display: block;
     height: 64px; }
+  .nav__logo {
+    display: none; }
   .nav__items {
     width: 94%;
     margin: 0 auto; }
   .nav__item {
-    margin: 0 0.7rem; }
+    margin: 0 0.5rem; }
 
 .about {
   background: #4592AD;

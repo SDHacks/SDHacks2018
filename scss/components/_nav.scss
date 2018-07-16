@@ -1,14 +1,25 @@
 .nav {
   min-height: 80px;
-  background: white;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 8;
-  box-shadow: $default-shadow;
+  background-color: transparent;
+  color: $tesc-blue;
+  transition: background-color 0.2s linear;
+
+  &__white {
+    box-shadow: $default-shadow; 
+    background-color: white;
+  }
+
+  &__white &__logo {
+      display: block;
+      height: 64px;
+    }
 
   &__logo {
-    height: 64px;
+    display: none;
   }
 
   &__items {
@@ -17,6 +28,6 @@
   }
 
   &__item {
-    margin: 0 0.7rem;
+    margin: 0 0.5rem;
   }
 }

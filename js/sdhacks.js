@@ -1,17 +1,14 @@
 $(document).ready(function(){
     new WOW().init();
     let _nav = $('#top-nav');
-    const FADE_DURATION = 200, 
-        SCROLL_TRESHOLD = 100;
-
-    _nav.hide();
+    const SCROLL_TRESHOLD = _nav.height();
 
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
-                _nav.fadeIn(FADE_DURATION);
+                _nav.addClass('nav__white');
             } else {
-                _nav.fadeOut(FADE_DURATION);
+                _nav.removeClass('nav__white');
             }
         });
     });
