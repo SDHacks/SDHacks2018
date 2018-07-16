@@ -5554,9 +5554,6 @@ ul {
   .hero__graphic {
     width: 100%;
     z-index: 1; }
-    @media (max-width: 479px) {
-      .hero__graphic {
-        display: none; } }
   .hero__content {
     color: #004E74;
     position: absolute;
