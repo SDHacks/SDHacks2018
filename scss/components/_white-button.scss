@@ -8,6 +8,7 @@
   color: $tesc-blue;
   display: inline-block;
   transition: background 100ms linear, color 100ms linear;
+  box-shadow: $default-shadow;
   
   @include media-breakpoint-down(sm) {
     display: inline-block;
@@ -21,6 +22,7 @@
     color: $white;
     text-decoration: none;
     border-width: 2px;
+    transform: translateY(-1px);
   }
 
   &--inline {

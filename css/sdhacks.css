@@ -5554,6 +5554,9 @@ ul {
   .hero__graphic {
     width: 100%;
     z-index: 1; }
+    @media (max-width: 479px) {
+      .hero__graphic {
+        display: none; } }
   .hero__content {
     color: #004E74;
     position: absolute;
@@ -5654,7 +5657,8 @@ ul {
   border-radius: 0.3rem;
   color: #004E74;
   display: inline-block;
-  transition: background 100ms linear, color 100ms linear; }
+  transition: background 100ms linear, color 100ms linear;
+  box-shadow: 0 2px 16px rgba(12, 42, 51, 0.3); }
   @media (max-width: 767px) {
     .white-button {
       display: inline-block;
@@ -5665,7 +5669,8 @@ ul {
     background: transparent;
     color: #fff;
     text-decoration: none;
-    border-width: 2px; }
+    border-width: 2px;
+    transform: translateY(-1px); }
   .white-button--inline {
     display: inline;
     margin: 0;
