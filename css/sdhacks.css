@@ -5540,7 +5540,6 @@ ul {
   position: relative; }
   .hero__graphic {
     width: 100%;
-    transform: translateY(6px);
     z-index: 1; }
   .hero__content {
     color: #004E74;
