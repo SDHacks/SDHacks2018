@@ -6,9 +6,13 @@ $(document).ready(function(){
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
+
+                //make nav white when below treshold
                 _nav.addClass('nav__white');
             } else {
-                if (!$('.navbar-toggler').hasClass('collapsed')) {
+
+                //make nav transparent only if the nav is collapsed
+                if ($('.navbar-toggler').hasClass('collapsed')) {
                     _nav.removeClass('nav__white');
                 }
             }
@@ -21,6 +25,7 @@ $(document).ready(function(){
                 _nav.removeClass('nav__white')
             }
             else {
+                console.log("shshs");
                 _nav.addClass('nav__white');
             }
         } 
