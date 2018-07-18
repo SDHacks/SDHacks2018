@@ -6,13 +6,11 @@ $(document).ready(function(){
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
-
                 //make nav white when below treshold
                 _nav.addClass('nav__white');
             } else {
-
                 //make nav transparent only if the nav is collapsed
-                if ($('.navbar-toggler').hasClass('collapsed')) {
+                if ($(window).width() > 768 || $('.navbar-toggler').hasClass('collapsed')) {
                     _nav.removeClass('nav__white');
                 }
             }
@@ -25,11 +23,29 @@ $(document).ready(function(){
                 _nav.removeClass('nav__white')
             }
             else {
-                console.log("shshs");
                 _nav.addClass('nav__white');
             }
         } 
     });
+
+    $('.nav__item').on('click', (e) => {
+
+        let scrollOffsets = {
+            '#faq': -100,
+            '#about': 100,
+            '#schedule': 150
+        }
+
+        e.preventDefault();
+
+        let hash = $(e.target).attr('href');
+        let sect = $(hash);
+        let additional = scrollOffsets[hash] || 0;
+
+        $('html, body').animate({
+            'scrollTop':  sect.offset().top + additional
+        }, 500)
+    })
 
     let tl = new TimelineMax();
     tl.staggerFrom('#laptop_text_copy_2 > g > g path', 0.1, {scaleX: 0}, 0.1)
