@@ -7,15 +7,11 @@
 	&__top {
 		width: 50%;
 		margin: 0 auto;
-
-		@include media-breakpoint-down(sm) {
-	  		display: none;
-	  	}
-
 	}
 
 	&__bot {
 		width: 100%;
+		transform: translateY(1px);
 	}
 
 	&__main {

@@ -19,9 +19,9 @@
   	font-size: 2rem;
     z-index: 5;
 
-  	@include media-breakpoint-down(md) {
+  	/*@include media-breakpoint-down(md) {
   		top: 5%;
-  	}
+  	}*/
 
   	@include media-breakpoint-down(sm) {
   		font-size: 1.3rem;

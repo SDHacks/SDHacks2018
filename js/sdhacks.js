@@ -8,9 +8,22 @@ $(document).ready(function(){
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
                 _nav.addClass('nav__white');
             } else {
-                _nav.removeClass('nav__white');
+                if (!$('.navbar-toggler').hasClass('collapsed')) {
+                    _nav.removeClass('nav__white');
+                }
             }
         });
+    });
+
+    $('.navbar-toggler').on('click', (e) => {
+        if ($(this).scrollTop() < SCROLL_TRESHOLD) {
+            if (_nav.hasClass('nav__white')) {
+                _nav.removeClass('nav__white')
+            }
+            else {
+                _nav.addClass('nav__white');
+            }
+        } 
     });
 
     let tl = new TimelineMax();

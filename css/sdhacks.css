@@ -5560,10 +5560,10 @@ ul {
     top: 18%;
     left: 5%;
     font-size: 2rem;
-    z-index: 5; }
-    @media (max-width: 1023px) {
-      .hero__content {
-        top: 5%; } }
+    z-index: 5;
+    /*@include media-breakpoint-down(md) {
+  		top: 5%;
+  	}*/ }
     @media (max-width: 767px) {
       .hero__content {
         font-size: 1.3rem;
@@ -5600,7 +5600,8 @@ ul {
     background-color: white; }
   .nav__toggler {
     position: absolute;
-    right: 0; }
+    right: 0;
+    top: 20px; }
   .nav__white .nav__logo {
     height: 64px;
     display: block;
@@ -5681,11 +5682,9 @@ ul {
   .schedule__top {
     width: 50%;
     margin: 0 auto; }
-    @media (max-width: 767px) {
-      .schedule__top {
-        display: none; } }
   .schedule__bot {
-    width: 100%; }
+    width: 100%;
+    transform: translateY(1px); }
   .schedule__main {
     margin-top: 5rem;
     position: relative; }
