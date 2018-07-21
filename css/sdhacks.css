@@ -5627,7 +5627,6 @@ ul {
     font-family: 'Reem Kufi', Helvetica, Roboto, Arial, sans-serif; }
   .about__graphic {
     width: 100%;
-    margin-left: 5rem;
     display: block; }
     @media (max-width: 767px) {
       .about__graphic {
