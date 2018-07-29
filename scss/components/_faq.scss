@@ -9,6 +9,7 @@
 
   &__title {
     margin: 3rem 0;
+    padding: 0 15px;
   }
 
   &__graphic {
@@ -24,7 +25,15 @@
 
   &__item {
     font-size: 1.2rem;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     z-index: 5;
+    margin-top: 0.5rem;
+    background: rgba(white, 0.4);
+    padding: 1rem;
+    border-radius: 2 * $border-radius;
+
+    p {
+      margin-bottom: 0.1rem;
+    }
   }
 }

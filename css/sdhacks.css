@@ -5720,7 +5720,8 @@ ul {
   position: relative;
   overflow: hidden; }
   .faq__title {
-    margin: 3rem 0; }
+    margin: 3rem 0;
+    padding: 0 15px; }
   .faq__graphic {
     position: absolute;
     width: 100%;
@@ -5730,8 +5731,14 @@ ul {
     margin-bottom: 0.5rem; }
   .faq__item {
     font-size: 1.2rem;
-    padding-bottom: 1rem;
-    z-index: 5; }
+    margin-bottom: 1rem;
+    z-index: 5;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 1rem;
+    border-radius: 0.6rem; }
+    .faq__item p {
+      margin-bottom: 0.1rem; }
 
 .sponsors {
   background: #EFDC8E;
