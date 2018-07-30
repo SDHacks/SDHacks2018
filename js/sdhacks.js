@@ -3,6 +3,7 @@ $(document).ready(function(){
     let _nav = $('#top-nav');
     const SCROLL_TRESHOLD = _nav.height();
 
+    //on scroll white behavior
     $(function () {
         $(window).scroll(function () {
             if ($(this).scrollTop() > SCROLL_TRESHOLD) { 
@@ -17,6 +18,7 @@ $(document).ready(function(){
         });
     });
 
+    //on click collapsed behaviour
     $('.navbar-toggler').on('click', (e) => {
         if ($(this).scrollTop() < SCROLL_TRESHOLD) {
             if (_nav.hasClass('nav__white')) {
@@ -28,12 +30,13 @@ $(document).ready(function(){
         } 
     });
 
+    //nav scrolling
     $('.nav__item').on('click', (e) => {
 
         let scrollOffsets = {
             '#faq': -100,
-            '#about': 100,
-            '#schedule': 150
+            '#about': 150,
+            '#schedule': 250,
         }
 
         e.preventDefault();
@@ -47,6 +50,8 @@ $(document).ready(function(){
         }, 500)
     })
 
+
+    //hero animation
     let tl = new TimelineMax();
     tl.staggerFrom('#laptop_text_copy_2 > g > g path', 0.1, {scaleX: 0}, 0.1)
         .from('#XMLID_123_', 1, {scaleY: 0, transformOrigin: "50% 50%", ease: Power2.easeOut});

@@ -5560,10 +5560,7 @@ ul {
     top: 18%;
     left: 5%;
     font-size: 2rem;
-    z-index: 5;
-    /*@include media-breakpoint-down(md) {
-  		top: 5%;
-  	}*/ }
+    z-index: 5; }
     @media (max-width: 767px) {
       .hero__content {
         font-size: 1.3rem;
@@ -5634,7 +5631,7 @@ ul {
         min-width: 20rem;
         margin: 0 auto; } }
   .about__collab {
-    color: #B73737; }
+    color: #9e3d30; }
   .about__empower {
     color: #F9AE70; }
   .about__innovate {
@@ -5720,8 +5717,10 @@ ul {
   position: relative;
   overflow: hidden; }
   .faq__title {
-    margin: 3rem 0;
-    padding: 0 15px; }
+    margin: 3rem 0; }
+    @media (max-width: 1023px) {
+      .faq__title {
+        text-align: center; } }
   .faq__graphic {
     position: absolute;
     width: 100%;

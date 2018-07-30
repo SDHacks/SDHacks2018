@@ -7,7 +7,6 @@
 
   &__graphic {
   	width: 100%;
-    //transform: translateY(6px);
     z-index: 1;
 
   }
@@ -18,10 +17,6 @@
   	left: 5%;
   	font-size: 2rem;
     z-index: 5;
-
-  	/*@include media-breakpoint-down(md) {
-  		top: 5%;
-  	}*/
 
   	@include media-breakpoint-down(sm) {
   		font-size: 1.3rem;

@@ -9,7 +9,10 @@
 
   &__title {
     margin: 3rem 0;
-    padding: 0 15px;
+
+    @include media-breakpoint-down(md) {
+      text-align: center;
+    }
   }
 
   &__graphic {
