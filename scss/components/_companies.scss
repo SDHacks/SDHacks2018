@@ -39,6 +39,8 @@ $logo-hover-padding: 0.5rem;
     max-height: 8rem;
     border: none !important;
     background: none !important;
+    display: block;
+    margin: 0 auto;
 
     &--padded {
       padding: 1.25rem;

@@ -5795,7 +5795,9 @@ ul {
   .companies__logo {
     max-height: 8rem;
     border: none !important;
-    background: none !important; }
+    background: none !important;
+    display: block;
+    margin: 0 auto; }
     .companies__logo--padded {
       padding: 1.25rem; }
       .companies__logo--padded:hover {
