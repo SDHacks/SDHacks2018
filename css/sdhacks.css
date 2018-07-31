@@ -5494,7 +5494,7 @@ ul {
     width: 100%;
     height: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     background-image: url(../assets/img/contact-clip.svg);
     background-position: bottom;
@@ -5663,8 +5663,7 @@ ul {
     background: transparent;
     color: #fff;
     text-decoration: none;
-    border-width: 2px;
-    transform: translateY(-1px); }
+    border-width: 2px; }
   .white-button--inline {
     display: inline;
     margin: 0;
