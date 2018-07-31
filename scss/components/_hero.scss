@@ -10,6 +10,22 @@
     z-index: 1;
 
   }
+
+  &__birds {
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: -3rem;
+
+    @include media-breakpoint-down(md) {
+      right: 2rem; 
+    }
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
   &__content {
   	color: $tesc-blue;
   	position: absolute;

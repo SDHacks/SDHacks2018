@@ -5554,6 +5554,17 @@ ul {
   .hero__graphic {
     width: 100%;
     z-index: 1; }
+  .hero__birds {
+    position: absolute;
+    width: 30%;
+    right: 0;
+    top: -3rem; }
+    @media (max-width: 1023px) {
+      .hero__birds {
+        right: 2rem; } }
+    @media (max-width: 767px) {
+      .hero__birds {
+        display: none; } }
   .hero__content {
     color: #004E74;
     position: absolute;
@@ -5720,6 +5731,14 @@ ul {
     @media (max-width: 1023px) {
       .faq__title {
         text-align: center; } }
+  .faq__crab {
+    position: absolute;
+    width: 8rem;
+    left: 60%;
+    top: -5px; }
+    @media (max-width: 767px) {
+      .faq__crab {
+        display: none; } }
   .faq__graphic {
     position: absolute;
     width: 100%;

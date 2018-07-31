@@ -15,6 +15,17 @@
     }
   }
 
+  &__crab {
+    position: absolute;
+    width: 8rem;
+    left: 60%;
+    top: -5px;
+
+    @include media-breakpoint-down(sm) {
+      display: none;
+    }
+  }
+
   &__graphic {
     position: absolute;
     width: 100%;
