@@ -24,11 +24,12 @@
   }
 
   &__link {
-    color: $white;
+    color: $sand-yellow;
     text-decoration-style: wavy;
     position: relative;
 
     &:hover {
+      color: white;
       text-decoration: none;
     }
 
@@ -41,7 +42,6 @@
       bottom: -0.5rem;
       left: 0;
       padding: 0 .5rem;
-      background-image: url(../assets/img/contact-underline.svg);
       background-size: contain;
       background-repeat: repeat-x;
     }

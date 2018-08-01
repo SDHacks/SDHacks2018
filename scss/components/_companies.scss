@@ -36,7 +36,7 @@ $logo-hover-padding: 0.5rem;
   }
 
   &__logo {
-    max-height: 8rem;
+    max-height: 8rem !important;
     border: none !important;
     background: none !important;
     display: block;

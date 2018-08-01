@@ -5503,10 +5503,11 @@ ul {
   .contact--sponsor {
     background: linear-gradient(to right bottom, #4592AD 33%, #1F6077); }
   .contact__link {
-    color: #fff;
+    color: #EFDC8E;
     text-decoration-style: wavy;
     position: relative; }
     .contact__link:hover {
+      color: white;
       text-decoration: none; }
     .contact__link:after {
       display: block;
@@ -5517,7 +5518,6 @@ ul {
       bottom: -0.5rem;
       left: 0;
       padding: 0 .5rem;
-      background-image: url(../assets/img/contact-underline.svg);
       background-size: contain;
       background-repeat: repeat-x; }
   .contact__header {
@@ -5581,7 +5581,8 @@ ul {
         margin-left: auto;
         margin-right: auto; } }
     .hero__content-logo {
-      width: 100%; }
+      width: 100%;
+      margin-top: 2rem; }
       @media (max-width: 767px) {
         .hero__content-logo {
           min-width: 10rem;
@@ -5589,7 +5590,8 @@ ul {
           display: block;
           margin: 0 auto; } }
     .hero__content-text {
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      white-space: nowrap; }
       @media (max-width: 767px) {
         .hero__content-text {
           margin-top: 1rem; } }
@@ -5812,7 +5814,7 @@ ul {
     align-items: center;
     justify-content: center; }
   .companies__logo {
-    max-height: 8rem;
+    max-height: 8rem !important;
     border: none !important;
     background: none !important;
     display: block;
