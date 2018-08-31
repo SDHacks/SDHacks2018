@@ -5542,7 +5542,9 @@ h1 {
   border: solid 2px white;
   border-radius: 0.6rem;
   border-collapse: separate;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  display: block;
+  width: 100%; }
   .company-table ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 7px; }

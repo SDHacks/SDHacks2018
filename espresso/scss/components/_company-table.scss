@@ -5,6 +5,8 @@
   border-radius: 2*$border-radius;
   border-collapse: separate;
   margin-bottom: 0;
+  display: block;
+  width: 100%;
 
   //overrides for macOS to show scrollbar always
   ::-webkit-scrollbar {
