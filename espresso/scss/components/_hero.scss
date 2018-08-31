@@ -1,0 +1,51 @@
+.hero {
+  width: 100%;
+  background: $espress-hero-gradient;
+  color: $hero-font-color;
+  height: 100%;
+
+  &--sponsor {
+    background: $decaf-gradient;
+    color: $hero-font-color;
+  }
+
+  &__container {
+    width: 1024px;
+    height: calc(100% - 96px);
+
+    @include media-breakpoint-down(md) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  &__data {
+    margin-left: 26%;
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+    }
+  }
+
+  &__logo {
+    margin: 8rem 0 1rem;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 20%;
+    }
+  }
+
+  &__location {
+    font-size: 1.5rem;
+  }
+
+  &__date {
+    font-size: 1.2rem;
+  }
+
+  &__feature-image {
+    padding-bottom: 3em;
+    -webkit-filter: drop-shadow( 6px 6px 4px #4d4e51); 
+    filter: drop-shadow( 6px 6px 4px #4d4e51);
+  }
+}

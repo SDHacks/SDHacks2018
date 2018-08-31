@@ -1,0 +1,32 @@
+.map {
+  margin: 5rem 0;
+  text-align: center;
+
+  &__header {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: $header-color;
+  }
+
+  &__button {
+    text-align: center;
+    padding: 1px 1px 1rem 1px;
+    background: $decaf-student-gradient;
+    color: $white;
+    width: auto;
+
+    &:hover, &:active {
+      color: darken($white, 10%);
+      background: $decaf-student-gradient !important;
+    }
+  }
+
+  &__link {
+    text-decoration: underline !important;
+    color: $espresso-dark-blue !important;
+  }
+
+  &__image {
+    margin: 0 auto 1rem;
+  }
+}

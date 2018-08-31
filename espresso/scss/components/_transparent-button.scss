@@ -1,0 +1,29 @@
+.transparent-button {
+  min-width: 10rem;
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background: transparent;
+  border: 2px solid $white;
+  border-radius: 2*$border-radius;
+  color: white;
+  font-size: 1.3rem;
+  display: inline-block;
+  transition: background 100ms linear, color 100ms linear;
+  
+  &:hover {
+    cursor: pointer;
+    background: white;
+    color: $espresso-dark-blue;
+    text-decoration: none;
+  }
+
+  &--inline {
+    display: inline;
+    margin: 0;
+    min-width: 0;
+  }
+
+  &--sponsor {
+    color: $decaf-dark-blue;
+  }
+}

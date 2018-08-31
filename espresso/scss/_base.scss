@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600|Work+Sans');
+@import 'bootstrap-overrides';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+$border-radius: 0.3rem;
+
+$white: #fff;
+
+$espresso-dark-blue: #03668D;
+$espresso-light-blue: #048090;
+
+$decaf-dark-blue: #237EF1;
+$decaf-light-blue: #34D9F7;
+$decaf-dark-green: #1fd46d;
+$decaf-light-green: #6CE5AB;
+$tesc-blue: #004E74;
+
+$decaf-dark-yellow: #F17879;
+$decaf-light-yellow: #F6B745;
+$decaf-dark-red: #f24141;
+$decaf-light-red: #e76d52;
+
+$espress-hero-gradient: linear-gradient(to right top, $espresso-dark-blue, $espresso-light-blue);
+
+$decaf-gradient: linear-gradient(to right top, $decaf-dark-blue, $decaf-light-blue);
+$decaf-student-gradient: linear-gradient(to right top, $decaf-dark-green, $decaf-light-green);
+$decaf-yellow-gradient: linear-gradient(to right top, $decaf-dark-yellow, $decaf-light-yellow);
+$decaf-red-gradient: linear-gradient(to right top, $decaf-dark-red, $decaf-light-red);
+
+$link-active: $white;
+$link-inactive: transparentize($link-active, 0.2);
+
+$header-color: #5A5A5A;
+
+$hero-font-color: $white;
+
+$contact-underline: #FEEFAE;
+
+$faq-border-color: #E1E1E1;
+$faq-question-color: #78777C;
+
+$company-table-header-color: #F5F8FA;
+$company-table-header-text: #A4A8AC;

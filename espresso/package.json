@@ -1,0 +1,24 @@
+{
+  "name": "espresso-2018",
+  "version": "1.0.0",
+  "description": "Espresso 2018",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UCSDTESC/Espresso-2018.git"
+  },
+  "author": "Triton Engineering Student Council Techinal Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UCSDTESC/Espresso-2018/issues"
+  },
+  "scripts": {
+    "start": "gulp"
+  },
+  "homepage": "https://github.com/UCSDTESC/Espresso-2018#readme",
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}

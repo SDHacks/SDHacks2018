@@ -57,4 +57,11 @@ $(document).ready(function(){
         .from('#XMLID_123_', 1, {scaleY: 0, transformOrigin: "50% 50%", ease: Power2.easeOut});
 
     let splashPageBubbles = document.querySelectorAll('#bubbles_copy_3 > g > g path');
+    //new TimelineLite().to("#bubbles_copy_3 > g > g", 0.5, {y:10 * Math.random(), ease:Linear.easeNone})
+        //.to("#bubbles_copy_3 > g > g", 1, {y: -10 * Math.random(), ease:Linear.easeNone, repeat:-1, yoyo:true});
+
+    splashPageBubbles.forEach(bubble => {
+        new TimelineLite().to(bubble, 1, {y:5 * Math.random(), ease:Linear.easeNone})
+            .to(bubble, 1, {y: -5 * Math.random(), ease:Linear.easeNone, repeat:-1, yoyo:true});
+    })
 });

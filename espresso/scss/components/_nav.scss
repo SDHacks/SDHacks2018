@@ -1,0 +1,37 @@
+.nav {
+  padding: 2rem 0;
+  font-size: 1.1rem;
+
+  &__links {
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  &__link {
+    color: $link-inactive;
+
+    &:hover {
+      color: $link-active;
+      text-decoration: none;
+    }
+
+    &--no-color {
+      color: inherit;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+  &__link-item {
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+  }
+
+  &__logo {
+    height: 2rem;
+    opacity: 0.85;
+  }
+}

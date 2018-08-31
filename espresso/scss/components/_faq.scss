@@ -1,0 +1,19 @@
+.faq {
+  text-align: center;
+  margin: 0 0 5rem;
+
+  &__header {
+    font-size: 3rem;
+  }
+
+  &--student {
+    a {
+      color: $espresso-dark-blue;
+
+      &:hover {
+        color: $espresso-light-blue;
+        text-decoration: none;
+      }
+    }
+  }
+}

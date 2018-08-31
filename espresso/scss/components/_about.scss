@@ -1,0 +1,16 @@
+.about {
+  padding-top: 6rem;
+  text-align: center;
+  min-height: 100%;
+
+  &__header {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-family: 'Cabin', sans-serif;   
+  }
+
+  &__contents {
+    font-size: 1.5rem;
+    color: $header-color;
+  }
+}
