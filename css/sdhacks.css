@@ -5710,16 +5710,25 @@ ul {
   .schedule__list {
     font-size: 1.2rem;
     display: block;
-    padding-left: 3rem;
     padding-top: 1rem; }
+    @media (max-width: 1023px) {
+      .schedule__list {
+        text-align: center; } }
     .schedule__list-item {
       width: 100%;
-      margin: 1rem auto; }
+      margin: 1.5rem auto;
+      display: flex;
+      flex-wrap: wrap; }
+      .schedule__list-item-muted {
+        opacity: 0.6; }
       .schedule__list-item_time {
-        width: 45%;
-        margin-right: 10%; }
+        width: 40%;
+        margin-right: 10%;
+        text-align: right; }
       .schedule__list-item_text {
-        width: 45%; }
+        width: 50%; }
+        .schedule__list-item_text-l {
+          text-decoration: underline; }
 
 .faq {
   transform: translateY(-2px);

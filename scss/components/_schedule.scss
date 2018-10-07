@@ -41,20 +41,34 @@
 	&__list {
 		font-size: 1.2rem;
 		display: block;
-		padding-left: 3rem;
 		padding-top: 1rem;
+
+		@include media-breakpoint-down(md) {
+			text-align: center;
+		}
 
 		&-item {
 			width: 100%;
-			margin: 1rem auto;
+			margin: 1.5rem auto;
+			display: flex;
+			flex-wrap: wrap;
+
+			&-muted {
+				opacity: 0.6;
+			}
 
 			&_time {
-				width: 45%;
+				width: 40%;
 				margin-right: 10%;
+				text-align: right;
 			}
 
 			&_text {
-				width: 45%;
+				width: 50%;
+
+				&-l {
+					text-decoration: underline
+				}
 			}
 		}
 	}
