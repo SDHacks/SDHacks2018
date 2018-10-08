@@ -5573,6 +5573,34 @@ h1 {
   .company-table__search {
     border: none; }
 
+.company {
+  background: white;
+  border-radius: 8px; }
+  .company__left {
+    margin-left: 2rem; }
+  .company__content {
+    margin: 1rem 0; }
+    @media (max-width: 1023px) {
+      .company__content {
+        text-align: center; } }
+  .company__featurette {
+    width: 80%;
+    display: block;
+    margin: 10%; }
+    .company__featurette-black {
+      width: 80%;
+      display: block;
+      margin: 10%;
+      background: grey; }
+  .company__name {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .company__industry, .company__auth, .company__position {
+    margin: .25rem 0;
+    color: #03668D; }
+    .company__industry span, .company__auth span, .company__position span {
+      color: black; }
+
 .contact {
   text-align: center;
   background: linear-gradient(to right top, #03668D, #048090);

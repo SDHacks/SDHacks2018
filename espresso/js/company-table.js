@@ -1,5 +1,5 @@
 $(function(){
-  $('.company-table').find('td').filter(function() {
+  $('#companies').find('.company').filter(function() {
     return $(this).index() === 0;
   }).sortElements(function(a, b) {
     if ($.text([a]) === $.text([b])) return 0;
@@ -32,14 +32,17 @@ $(function(){
     var uniquePositions = {};
     var uniqueWorkAuths = {};
 
-    $('.company-table tr:not(:first-child)').each(function() {
-      var industryElem = $('td:nth-child(' + columnMap.industry + ')', this);
-      var positionElem = $('td:nth-child(' + columnMap.position + ')', this);
-      var workAuthElem = $('td:nth-child(' + columnMap.workAuth + ')', this);
+
+    $('#companies .company').each(function() {
+      var industryElem = $('.company__industry span', this);
+      var positionElem = $('.company__position span', this);
+      var workAuthElem = $('.company__auth span', this);
 
       var industries = industryElem.text().split(', ');
       var positions = positionElem.text().split(', ');
       var workAuths = workAuthElem.text().split(', ');
+
+      console.log(industries, positions, workAuths)
       
       industries.forEach(function(industry) {
         if (Object.keys(uniqueIndustries).indexOf(industry) === -1) {
@@ -157,11 +160,11 @@ $(function(){
   };
 
   function onFilterChanged() {
-    $('.company-table tr:not(:first-child)').each(function() {
-      var name = $('td:nth-child(' + columnMap.name + ')', this).text();
-      var industry = $('td:nth-child(' + columnMap.industry + ')', this).text();
-      var position = $('td:nth-child(' + columnMap.position + ')', this).text();
-      var workAuth = $('td:nth-child(' + columnMap.workAuth + ')', this).text();
+    $('#companies .company').each(function() {
+      var name = $('.company__name', this).text();
+      var industry = $('.company__industry span', this).text();
+      var position = $('.company__position span', this).text();
+      var workAuth = $('.company__auth span', this).text();
 
       if (name.indexOf(activeFilters.name) === -1) {
         $(this).hide();

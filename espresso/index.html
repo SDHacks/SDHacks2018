@@ -116,40 +116,137 @@
         <div class="container">
           <h1 class="tabling__header mb-5">Attending Companies</h1>
         </div>
-        <div class="container table-responsive-md">
-          <table class="table company-table">
-            <tr class="company-table__header">
-              <th>
-                <input type="text" placeholder="Company" class="form-control company-table__search"/>
-              </th>
-              <th>
-                <div class="dropdown">
-                  <button class="filter industry-filter btn dropdown-toggle" type="button" id="industryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Industry
-                  </button>
-                  <div class="filter__options dropdown-menu industry-filter__options" aria-labelledby="industryDropdown">
+        <div class="container">
+          <div class="row">
+            <div class="col-md mt-3">
+              <input type="text" placeholder="Company" class="form-control company-table__search"/>
+            </div>
+            <div class="col-md mt-3">
+              <div class="dropdown">
+              <button class="filter industry-filter btn dropdown-toggle" type="button" id="industryDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Industry
+              </button>
+              <div class="filter__options dropdown-menu industry-filter__options" aria-labelledby="industryDropdown">
+              </div>
+              </div>
+            </div>
+            <div class="col-md mt-3">
+              <div class="dropdown">
+              <button class="filter position-filter btn dropdown-toggle" type="button" id="positionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Position
+              </button>
+              <div class="filter__options dropdown-menu position-filter__options" aria-labelledby="industryDropdown">
+              </div>
+              </div>
+            </div>
+            <div class="col-md mt-3">
+              <div class="dropdown">
+              <button class="filter authorisation-filter btn dropdown-toggle" type="button" id="workAuthDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Work Authorization
+              </button>
+              <div class="filter__options dropdown-menu authorisation-filter__options" aria-labelledby="industryDropdown">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div id="companies">
+            <div class="container p-0 mt-5 company">
+              <div class="row">
+                <div class="col-md-4 align-self-center">
+                  <img src="./assets/sponsors/astranis.svg" class="company__featurette" />
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div class="company__content">
+                    <div class="company__name"> Astranis </div>
+                    <p class="company__description">
+                        We are taking on one of humanity's most important challenges. Four billion people do not have access to the internet. Astranis is going to change that. We are building the next generation of smaller, lower-cost telecommunications satellites to bring the world online.
+                    </p>
+                  <div class="company__industry">
+                      Industry: <span> Mechanical, Aerospace </span>
+                    </div>
+                    <div class="company__position">
+                        Position: <span>Full-time, Internship</span> 
+                    </div>
+                    <div class="company__auth">
+                      Work Authorization: <span> U.S. Citizen </span>
+                    </div>
                   </div>
                 </div>
-              </th>
-              <th>
-                <div class="dropdown">
-                  <button class="filter position-filter btn dropdown-toggle" type="button" id="positionDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Position
-                  </button>
-                  <div class="filter__options dropdown-menu position-filter__options" aria-labelledby="industryDropdown">
+              </div>
+            </div>
+            <!--<div class="container p-0 mt-5 company">
+              <div class="row">
+                <div class="col-md-4 align-self-center">
+                  <img src="./assets/sponsors/hp.png" class="company__featurette" />
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div class="company__content">
+                    <div class="company__name"> Brain Corp. </div>
+                    <p class="company__description">
+                        Brain Corp is a San Diego-based software company specializing in the development of intelligent, autonomous navigation systems for everyday machines. The company's BrainOS AI platform integrates with off-the-shelf hardware and sensors to provide these machines with self-driving capabilities. The technology has been incorporated into trusted, brand-name floor care equipment to effectively create robots that ensure cleaner environments, safer working conditions and optimal efficiency with no direct operator control.
+                    </p>
+                  <div class="company__industry">
+                      Industry: <span> Software, Hardware </span>
+                    </div>
+                    <div class="company__position">
+                        Position: <span>Full-time, Internship</span> 
+                    </div>
+                    <div class="company__auth">
+                      Work Authorization: <span> U.S. Citizen </span>
+                    </div>
                   </div>
                 </div>
-              </th>
-              <th>
-                <div class="dropdown">
-                  <button class="filter authorisation-filter btn dropdown-toggle" type="button" id="workAuthDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Work Authorization
-                  </button>
-                  <div class="filter__options dropdown-menu authorisation-filter__options" aria-labelledby="industryDropdown">
+              </div>
+            </div>-->
+            <div class="container p-0 mt-5 company">
+                <div class="row">
+                  <div class="col-md-4 align-self-center">
+                    <img src="./assets/sponsors/gigaio.png" class="company__featurette-black" />
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="company__content">
+                      <div class="company__name"> Gigaio </div>
+                      <p class="company__description">
+                          GigaIO has developed a hyper performance network for software-defined infrastructure (SDI) that enables data centers to easily scale their systems, creating a flexible infrastructure that accelerates system performance. For more information visit www.gigaio.com.
+                      </p>
+                      <div class="company__industry">
+                        Industry: <span> Software, Hardware </span>
+                      </div>
+                      <div class="company__position">
+                          Position: <span>Full-time, Internship, Part-time</span> 
+                      </div>
+                      <div class="company__auth">
+                        Work Authorization: <span> U.S. Citizen </span>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </th>
-            </tr>
+            </div>
+            <div class="container p-0 mt-5 company">
+                <div class="row">
+                  <div class="col-md-4 align-self-center">
+                    <img src="./assets/sponsors/surcle.png" class="company__featurette" />
+                  </div>
+                  <div class="col-md-8 d-flex align-items-center">
+                    <div class="company__content">
+                      <div class="company__name"> Surcle.io </div>
+                      <p class="company__description">
+                        Surcle.io is an online, crowd-engineering platform where engineers and innovators collaborate and compete in challenges from corporations, startups, and institutions with a focus on electronics and manufacturing.                      </p>
+                    <div class="company__industry">
+                        Industry: <span> Software, Hardware </span>
+                      </div>
+                      <div class="company__position">
+                          Position: <span>Full-time</span> 
+                      </div>
+                      <div class="company__auth">
+                        Work Authorization: <span> U.S. Citizen, F-1 Visa </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!--<table class="table company-table">
             <tr>
               <td>Astranis</td>
               <td>Mechanical, Aerospace</td>
@@ -173,301 +270,7 @@
               <td>Software, Hardware</td>
               <td>Full-time, Part Time, Internship</td>
               <td>U.S. Citizen</td>
-            </tr>
-            <!--<tr>
-              <td>AppFolio</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Hunter Industries</td>
-              <td>Materials &amp; Structural/Civil, Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>IBM</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>FactSet Research Systems Inc.</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Bentley Systems</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>L3 Technologies</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Integrity Applications Incorporated</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>ViaSat</td>
-              <td>Materials &amp; Structural/Civil, Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Software and Systems Test Engineers, Hardware Engineer</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Amazon A9</td>
-              <td>Software, Hardware</td>
-              <td>Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>HP Inc</td>
-              <td>Life &amp; Physical Science, Materials &amp; Structural/Civil, Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Cubic Corporation</td>
-              <td>Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Leidos</td>
-              <td>Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>PlayStation</td>
-              <td>Software, Hardware</td>
-              <td>Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Hughes Network Systems</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Oath (formerly Yahoo!)</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Part-time</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Air Force Test Center</td>
-              <td>Mechanical &amp; Aerospace</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Arista Networks</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Webroot</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Amazon Lab126</td>
-              <td>Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Supplyframe</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>412 Test Engineering Group</td>
-              <td>Mechanical &amp; Aerospace</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Reflexion Health</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Moebius Solutions</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>NuVasive</td>
-              <td>Life &amp; Physical Science</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Workday</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Synopsys</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>TrellisWare Technologies</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Peregrine Semiconductor</td>
-              <td>Environment/Energy, Life &amp; Physical Science, Materials &amp; Structural/Civil, Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>ServiceNow</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Varioscale Inc</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Visa Inc</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Mitchell International</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Teradata</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Los Angeles Department of Water and Power</td>
-              <td>Environment/Energy, Materials &amp; Structural/Civil, Mechanical &amp; Aerospace</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>MeridianLink</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Brain Corp</td>
-              <td>Software, Hardware, Start-up</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Cognex Corporation</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>MagCanica</td>
-              <td>Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>Quartus Engineering Incorporated</td>
-              <td>Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Aruba (a Hewlett Packard Enterprise Company)</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>San Diego Composites</td>
-              <td>Mechanical &amp; Aerospace</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Intel</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>NewBlue</td>
-              <td>Software, Hardware</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen, International Student</td>
-            </tr>
-            <tr>
-              <td>StemoniX</td>
-              <td>Life &amp; Physical Science</td>
-              <td>Full-time, Part-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Greenlee Communications</td>
-              <td>Software, Hardware</td>
-              <td>Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Oracle</td>
-              <td>Materials &amp; Structural/Civil, Mechanical &amp; Aerospace, Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>AuptiX</td>
-              <td>Software, Hardware, Start-up</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>Ad-Juster, Inc</td>
-              <td>Software, Hardware</td>
-              <td>Full-time</td>
-              <td>U.S. Citizen</td>
-            </tr>
-            <tr>
-              <td>San Diego Gas &amp; Electric</td>
-              <td>Environment/Energy</td>
-              <td>Full-time, Internship</td>
-              <td>U.S. Citizen</td>
-            </tr>-->          
+            </tr>-->       
           </table>
         </div>
     </section>
@@ -1087,7 +890,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/sortElements.js"></script>
-    <script src="js/company-table.js?1602"></script>
+    <script src="js/company-table.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
       integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
