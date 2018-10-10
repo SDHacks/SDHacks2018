@@ -5828,6 +5828,14 @@ ul {
     background: none !important;
     display: block;
     margin: 0 auto; }
+    .companies__logo-big {
+      max-height: 13rem !important;
+      border: none !important;
+      background: none !important; }
+    .companies__logo-r {
+      max-height: 20rem;
+      border: none !important;
+      background: none !important; }
     .companies__logo--padded {
       padding: 1.25rem; }
       .companies__logo--padded:hover {

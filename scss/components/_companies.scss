@@ -42,6 +42,18 @@ $logo-hover-padding: 0.5rem;
     display: block;
     margin: 0 auto;
 
+    &-big {
+      max-height: 13rem !important;
+      border: none !important;
+      background: none !important;
+    }
+
+    &-r {
+      max-height: 20rem;
+      border: none !important;
+      background: none !important;
+    }
+
     &--padded {
       padding: 1.25rem;
 
