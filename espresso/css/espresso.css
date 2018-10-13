@@ -5594,7 +5594,8 @@ h1 {
       background: grey; }
   .company__name {
     font-size: 2rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-decoration: underline; }
   .company__industry, .company__auth, .company__position {
     margin: .25rem 0;
     color: #03668D; }
